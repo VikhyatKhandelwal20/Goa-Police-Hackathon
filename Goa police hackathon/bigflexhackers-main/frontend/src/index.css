@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fix Leaflet z-index issues */
+.leaflet-container {
+  z-index: 1 !important;
+}
+
+.leaflet-control-container {
+  z-index: 1 !important;
+}
+
+.leaflet-popup {
+  z-index: 1 !important;
+}
+
+.leaflet-tooltip {
+  z-index: 1 !important;
+}
+
+/* Police Department Design System - Professional Government Theme
+All colors MUST be HSL for consistency and theming.
+*/
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 27%;
+
+    /* Card system */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    /* Popover system */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    /* Police Navy Blue Primary Theme */
+    --primary: 214 100% 34%;  /* #004AAD - Police Navy Blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 214 100% 45%;
+    --primary-dark: 214 100% 25%;
+
+    /* Secondary colors */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 215 25% 27%;
+
+    /* Muted colors */
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent colors */
+    --accent: 210 20% 96%;
+    --accent-foreground: 215 25% 27%;
+
+    /* Status colors */
+    --success: 142 71% 45%;  /* Green for available/on-duty */
+    --success-foreground: 0 0% 100%;
+    --warning: 45 93% 58%;   /* Yellow for break/busy */
+    --warning-foreground: 215 25% 27%;
+    --destructive: 0 84% 60%;  /* Red for emergency/offline */
+    --destructive-foreground: 0 0% 100%;
+
+    /* UI elements */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 214 100% 34%;
+
+    /* Police department gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 100% 34%), hsl(214 100% 45%));
+    --gradient-secondary: linear-gradient(180deg, hsl(210 20% 98%), hsl(210 20% 96%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 100% 25%), hsl(214 100% 34%));
+
+    /* Shadows */
+    --shadow-police: 0 4px 20px -2px hsl(214 100% 34% / 0.15);
+    --shadow-card: 0 2px 10px -1px hsl(215 25% 27% / 0.1);
+    --shadow-elevated: 0 8px 30px -4px hsl(214 100% 34% / 0.25);
+
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode colors */
+    --background: 215 28% 17%;
+    --foreground: 210 40% 98%;
+
+    --card: 215 28% 17%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 215 28% 17%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 214 100% 45%;  /* Lighter navy for dark mode */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 214 100% 55%;
+    --primary-dark: 214 100% 35%;
+
+    --secondary: 215 25% 25%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 25% 25%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 215 25% 25%;
+    --accent-foreground: 210 40% 98%;
+
+    --success: 142 71% 45%;  
+    --success-foreground: 0 0% 100%;
+    --warning: 45 93% 58%;   
+    --warning-foreground: 215 25% 27%;
+    --destructive: 0 62% 50%;  
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 25% 25%;
+    --input: 215 25% 25%;
+    --ring: 214 100% 45%;
+
+    --sidebar-background: 215 30% 15%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 214 100% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 20%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 215 25% 20%;
+    --sidebar-ring: 214 100% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

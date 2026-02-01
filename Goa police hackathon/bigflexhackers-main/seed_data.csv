@@ -1,0 +1,6 @@
+officerId,name,password,rank,role,homePoliceStation,email,contactNumber,lat,lon
+SUP_PERNEM_SDPO,Rakesh Kumar,admin123,PI,Supervisor,Pernem PS,rakesh.kumar@police.gov.in,9876543210,15.4989,73.8278
+OFF_MOPA_PI_01,Anjali Sharma,police123,PI,Officer,Mopa Airport PS,anjali.sharma@police.gov.in,9876543211,15.2736,73.9589
+OFF_MAPUSA_PC_01,Suresh Patil,police123,PC,Officer,Mapusa PS,suresh.patil@police.gov.in,9876543212,15.6000,73.8000
+OFF_MAPUSA_PC_02,Priya Singh,police123,PC,Officer,Mapusa PS,priya.singh@police.gov.in,9876543213,15.6000,73.8000
+OFF_PERNEM_PC_01,Amit Verma,police123,PC,Officer,Pernem PS,amit.verma@police.gov.in,9876543214,15.4989,73.8278
